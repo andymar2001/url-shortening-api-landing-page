@@ -1,0 +1,34 @@
+include ../config/config 
+include ../includes/mixins 
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //FAVICON
+    link(rel="shortcut icon", href=`${favicon}`)
+    //OPEN GRAPH
+    meta(property="og:title" content=`${titleNetworks}`)
+    meta(property="og:type" content="website")
+    meta(property="og:url" content=`${urlWeb}`)
+    meta(property="og:image" content=`${imgWeb}`)
+    meta(property="og:description" content=`${descriptionNetworks}`)
+    //SCHEMA MARKUP FOR GOOGLE
+    meta(itemprop="name" content=`${titleNetworks}`)
+    meta(itemprop="description" content=`${descriptionNetworks}`)
+    meta(itemprop="image" content=`${imgWeb}`)
+    //TWITTER CARD DATA
+    meta(name="twitter:card" content=`${twitterCard}`)
+    meta(name="twitter:site" content=`${urlWeb}`)
+    meta(name="twitter:title" content=`${titleNetworks}`)
+    meta(name="twitter:description" content=`${descriptionNetworks}`)
+    meta(name="twitter:image:src" content=`${imgWeb}`)
+    //FONTAWESOME
+    link(rel="stylesheet", href="assets/fontawesome/css/all.min.css")
+    script(src="assets/fontawesome/js/all.min.js")
+    //STYLE BASE
+    link(rel="stylesheet", href="css/styles.css")
+    block title-description-head
+  body
+    h1 Titulo de prueba
+    script(src="js/scripts-min.js")

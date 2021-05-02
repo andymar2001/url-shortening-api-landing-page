@@ -1,0 +1,10 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+:root {
+  --main-title: "Poppins", sans-serif;
+  --main-font: "Poppins", sans-serif;
+  --second-font: "Poppins", sans-serif;
+}
+
+$main-title: var(--main-title);
+$main-font: var(--main-font);
+$second-font: var(--second-font);

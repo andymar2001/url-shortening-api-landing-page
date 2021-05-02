@@ -1,0 +1,25 @@
+$tablet: 780px;
+$laptop: 1280px;
+$desktop: 1600px;
+$fullhd: 1920px;
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: $laptop) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+@mixin fullhd {
+  @media screen and (min-width: $fullhd) {
+    @content;
+  }
+}
