@@ -1,3 +1,8 @@
 extends ../templates/template.pug
 block title-description-head
   +title-description-head("Title","Description")
+block cover-page 
+  .cover-page 
+    .cover-page__container.container
+      picture.cover-page__img 
+        img(src=`${img}/illustration-working.svg`, alt="Illustration")

@@ -1,1 +1,1 @@
-"use strict";console.log("Hola");
+"use strict";console.log("Hola");var menu=document.getElementById("main-menu"),btnNav=document.getElementById("btn-nav");btnNav.addEventListener("click",(function(){menu.classList.toggle("main-menu--active")}));

@@ -1,0 +1,37 @@
+.header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  z-index: 50;
+  @include mobile {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  &__container {
+    position: relative;
+    @include laptop {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__nav {
+    position: relative;
+    @include laptop {
+      width: 100%;
+      margin-left: 6rem;
+    }
+  }
+  &__btnnav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.2rem;
+    color: $grayish-violet;
+    font-size: 2.6rem;
+    @include mobile {
+      right: 2rem;
+    }
+    @include laptop {
+      display: none;
+    }
+  }
+}

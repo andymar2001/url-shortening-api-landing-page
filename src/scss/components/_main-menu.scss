@@ -1,0 +1,67 @@
+.main-menu {
+  margin: 0;
+  padding: 3.5rem 2rem;
+  list-style: none;
+  background-color: $secondary-color;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3rem;
+  &--active {
+    display: flex;
+  }
+  @include mobile {
+    top: 3.5rem;
+  }
+  @include laptop {
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+    flex-direction: row;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    transform: translateX(0);
+  }
+  &__item {
+    color: $white;
+    font-weight: 700;
+    margin-top: 3.2rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &--fullwidth {
+      width: 100%;
+      @include laptop {
+        width: auto;
+      }
+    }
+    @include laptop {
+      color: $gray;
+      margin-top: 0;
+      margin-left: 4rem;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:nth-of-type(4) {
+        margin-left: auto;
+      }
+    }
+  }
+  &__line {
+    margin-top: 3.2rem;
+    height: 0.1rem;
+    width: 100%;
+    opacity: 0.5;
+    background-color: $grayish-violet;
+    @include laptop {
+      display: none;
+    }
+  }
+}

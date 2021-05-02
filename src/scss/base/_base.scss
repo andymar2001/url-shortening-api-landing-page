@@ -57,3 +57,19 @@ span {
 button {
   border-radius: 0;
 }
+
+.container{
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  @include mobile{
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  @include laptop{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

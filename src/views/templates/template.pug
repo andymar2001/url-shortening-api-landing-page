@@ -30,5 +30,24 @@ html(lang="es")
     link(rel="stylesheet", href="css/styles.css")
     block title-description-head
   body
-    h1 Titulo de prueba
+    header.header 
+      .header__container.container
+        a(href="#").header__logo
+          img(src=`${img}/logo.svg`, alt="Logo Shortly")
+        nav.header__nav
+          ul#main-menu.main-menu 
+            li.main-menu__item
+              a(href="#") Features 
+            li.main-menu__item
+              a(href="#") Pricing 
+            li.main-menu__item
+              a(href="#") Resources 
+            .main-menu__line
+            li.main-menu__item
+              a(href="#") Login 
+            li.main-menu__item.main-menu__item--fullwidth
+              a(href="#").btn-border Sign Up
+        #btn-nav.header__btnnav
+          <i class="fas fa-bars"></i>
+    block cover-page
     script(src="js/scripts-min.js")

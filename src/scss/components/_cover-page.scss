@@ -1,0 +1,10 @@
+.cover-page {
+  &__container {
+    overflow: hidden;
+  }
+  &__img {
+    & img{
+      max-width: 44rem;
+    }
+  }
+}
