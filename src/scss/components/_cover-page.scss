@@ -1,10 +1,79 @@
 .cover-page {
-  &__container {
+  @include laptop {
+    margin-top: 2rem;
+    position: relative;
     overflow: hidden;
   }
+  &__container {
+    overflow: hidden;
+    @include laptop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      overflow: visible;
+    }
+  }
   &__img {
-    & img{
+    display: flex;
+    justify-content: center;
+    margin-left: 15rem;
+    @include laptop {
+      order: 1;
+      margin-left: 0;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -18rem;
+    }
+    @include desktop {
+    }
+    & img {
       max-width: 44rem;
+      @include laptop {
+        max-width: 100%;
+        margin-left: 0rem;
+      }
+    }
+  }
+  &__detail {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    @include laptop {
+      order: 0;
+      text-align: left;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 4.3rem;
+    color: $very-dark-violet;
+    @include laptop {
+      font-size: 6.5rem;
+      font-weight: 900;
+    }
+    @include desktop {
+      font-size: 8rem;
+    }
+  }
+  &__description {
+    margin: 0;
+    color: $grayish-violet;
+    line-height: 2.5rem;
+    @include laptop {
+      max-width: 40rem;
+      letter-spacing: 0.1.5rem;
+    }
+  }
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+    @include laptop {
+      margin-left: 0;
+      margin-top: 2rem;
+      font-weight: 700;
     }
   }
 }
