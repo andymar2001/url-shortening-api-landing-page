@@ -1,0 +1,38 @@
+.search-result {
+  display: grid;
+  background-color: #fff;
+  border-radius: 1rem;
+  @include tablet{
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+  }
+  &__link,
+  &__shortenedlink {
+    font-size: 1.6rem;
+    padding: 1.4rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__link {
+    color: $very-dark-violet;
+    border-bottom: 0.1rem solid $gray;
+    @include tablet{
+      border-bottom: none;
+    }
+  }
+  &__shortenedlink {
+    color: $primary-color;
+  }
+  &__button {
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0 1.4rem 1.4rem;
+    font-size: 1.6rem;
+    @include tablet{
+      margin: 1.4rem;
+    }
+  }
+}

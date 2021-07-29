@@ -1,0 +1,21 @@
+.search-section {
+  position: relative;
+  top: -8rem;
+  @include tablet {
+    top: -5.5rem;
+  }
+  @include laptop{
+    top: -7.5rem;
+  }
+  &__container {
+  }
+  &__results {
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+    @include tablet{
+      margin-top: 1.5rem;
+      gap: 1.5rem;
+    }
+  }
+}
