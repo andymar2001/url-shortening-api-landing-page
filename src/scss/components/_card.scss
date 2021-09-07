@@ -1,0 +1,50 @@
+.card-statistic {
+  background-color: #fff;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  @include laptop{
+    padding: 4rem;
+    padding-top: 8rem;
+    &--second{
+      top: 4rem;
+    }
+    &--third{
+      top: 8rem;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: $secondary-color;
+    @include laptop{
+      left: 8rem;
+    }
+  }
+  &__title,
+  &__description {
+    text-align: center;
+    @include laptop{
+      text-align: left;
+    }
+  }
+  &__title {
+    font-size: 2.2rem;
+  }
+  &__description{
+    margin: 0;
+    margin-top: 2rem;
+    @include laptop{
+      line-height: 1.4;
+    }
+  }
+}

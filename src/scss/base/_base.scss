@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 figure {
@@ -58,25 +58,43 @@ button {
   border-radius: 0;
 }
 
-.main{
+.main {
   position: relative;
-  //background-color: rgb(241, 241, 241);
-  background-color: rgb(156, 156, 156);
+  background-color: rgb(240, 241, 246);
   padding-bottom: 6rem;
 }
 
-.container{
+.container {
   padding-right: 1.2rem;
   padding-left: 1.2rem;
-  @include mobile{
+  @include mobile {
     padding-right: 2rem;
     padding-left: 2rem;
   }
-  @include laptop{
+  @include laptop {
     padding-left: 0;
     padding-right: 0;
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+.title {
+  font-weight: 900;
+  font-size: 2.6rem;
+  letter-spacing: -1px;
+  font-family: $main-title;
+  color: $very-dark-blue;
+  margin: 0;
+  @include laptop{
+    font-size: 3.6rem;
+  }
+}
+
+.text {
+  color: $grayish-violet;
+  line-height: 2.5rem;
+  @include laptop {
+    letter-spacing: 0.1.5rem;
   }
 }

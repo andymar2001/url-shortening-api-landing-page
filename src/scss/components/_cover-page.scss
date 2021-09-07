@@ -61,11 +61,9 @@
   }
   &__description {
     margin: 0;
-    color: $grayish-violet;
-    line-height: 2.5rem;
+    font-size: 1.8rem;
     @include laptop {
       max-width: 40rem;
-      letter-spacing: 0.1.5rem;
     }
   }
   &__button {

@@ -1,13 +1,11 @@
 .search-section {
   position: relative;
-  top: -8rem;
+  top: -7.5rem;
   @include tablet {
     top: -5.5rem;
   }
   @include laptop{
     top: -7.5rem;
-  }
-  &__container {
   }
   &__results {
     margin-top: 2rem;

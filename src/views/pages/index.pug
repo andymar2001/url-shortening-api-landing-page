@@ -8,7 +8,7 @@ block cover-page
         img(src=`${img}/illustration-working.svg`, alt="Illustration")
       .cover-page__detail
         p.cover-page__title More than just shorter links
-        p.cover-page__description Build your brand's recognition and get detailed insights on how your links are perfoming
+        p.cover-page__description.text Build your brand's recognition and get detailed insights on how your links are perfoming
         a(href="#").cover-page__button.btn-border Get Started
 block main 
   main.main 
@@ -29,4 +29,24 @@ block main
           .search-result
             a(href="#" target="_blank").search-result__link https://www.google.com
             a(href="#" target="_blank").search-result__shortenedlink https://re.liasdasdnk.com
-            button.search-result__button.btn Copy 
+            button.search-result__button.btn Copy
+    section.statistics-section 
+      .statistics-section__container.container
+        h2.statistics-section__title.title Advanced Statistics
+        p.statistics-section__description.text Track how your links are performing across the web with our advanced statistics dashboard.
+        .statistics-section__grid
+          article.card-statistic
+            picture.card-statistic__icon 
+              img(src=`${img}/icon-brand-recognition.svg`, alt="Brand recognition")
+            h3.card-statistic__title.title Brand Recognition
+            p.card-statistic__description.text Boost yout brand recognition with each click. Generic links dont't mean a thing. Branded links help instil confidence in your content. 
+          article.card-statistic.card-statistic--second
+            picture.card-statistic__icon
+              img(src=`${img}/icon-detailed-records.svg`, alt="Detailed records")
+            h3.card-statistic__title.title Detailed Records
+            p.card-statistic__description.text Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
+          article.card-statistic.card-statistic--third
+            picture.card-statistic__icon
+              img(src=`${img}/icon-fully-customizable.svg`, alt="Fully customizable")
+            h3.card-statistic__title.title Fully Customizable
+            p.card-statistic__description.text Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
