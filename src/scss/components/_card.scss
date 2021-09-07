@@ -1,8 +1,10 @@
 .card-statistic {
   background-color: #fff;
   position: relative;
-  padding-top: 4rem;
+  padding-top: 8rem;
   padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   @include laptop{
     padding: 4rem;
     padding-top: 8rem;
