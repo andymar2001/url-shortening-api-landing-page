@@ -17,7 +17,7 @@
   }
   &__link {
     color: $very-dark-violet;
-    border-bottom: 0.1rem solid $gray;
+    border-bottom: 0.1rem solid rgb(226, 226, 226);
     @include tablet{
       border-bottom: none;
     }

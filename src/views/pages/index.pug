@@ -19,16 +19,16 @@ block main
           input.form-search__button.btn(type="submit" value="Shorten it!")
         .search-section__results
           .search-result
-            a(href="#" target="_blank").search-result__link https://www.google.com
-            a(href="#" target="_blank").search-result__shortenedlink https://re.link.com
+            span.search-result__link https://www.google.com
+            span.search-result__shortenedlink https://re.link.com
             button.search-result__button.btn Copy 
           .search-result
-            a(href="#" target="_blank").search-result__link https://www.google.com
-            a(href="#" target="_blank").search-result__shortenedlink https://re.link.com
+            span.search-result__link https://www.google.com
+            span.search-result__shortenedlink https://re.link.com
             button.search-result__button.btn Copy 
           .search-result
-            a(href="#" target="_blank").search-result__link https://www.google.com
-            a(href="#" target="_blank").search-result__shortenedlink https://re.liasdasdnk.com
+            span.search-result__link https://www.google.com
+            span.search-result__shortenedlink https://re.liasdasdnk.com
             button.search-result__button.btn Copy
     section.statistics-section 
       .statistics-section__container.container
@@ -53,3 +53,47 @@ block main
     aside.aside-section
       p.aside-section__title.title Boost your links today
       a(href="#").aside-section__button.btn Get Started
+    footer.footer 
+      .footer__container.container
+        .footer-grid 
+          .footer-grid__item
+            picture.footer__logo
+              img(src=`${img}/logo-white.svg`, alt="Logo Alternativo Shortly")
+          .footer-grid__item.footer-grid__item--margin
+            p.footer-grid__subtitle Features
+            ul.footer-grid__list
+              li
+                a(href="#") Link Shortening
+              li
+                a(href="#") Branded Links
+              li
+                a(href="#") Analytics
+          .footer-grid__item
+            p.footer-grid__subtitle Resources
+            ul.footer-grid__list
+              li
+                a(href="#") Blog
+              li
+                a(href="#") Developers
+              li
+                a(href="#") Support
+          .footer-grid__item
+            p.footer-grid__subtitle Company
+            ul.footer-grid__list
+              li
+                a(href="#") About
+              li
+                a(href="#") Our Team
+              li
+                a(href="#") Careers
+              li
+                a(href="#") Contact
+          .footer-grid__item.footer-grid__item--socials
+            a(href="https://www.facebook.com" target="_blank")
+              img(src=`${img}/icon-facebook.svg`, alt="Icono facebook")
+            a(href="https://twitter.com" target="_blank")
+              img(src=`${img}/icon-twitter.svg`, alt="Icono twitter")
+            a(href="https://www.pinterest.es" target="_blank")
+              img(src=`${img}/icon-pinterest.svg`, alt="Icono pinterest")
+            a(href="https://www.instagram.com" target="_blank")
+              img(src=`${img}/icon-instagram.svg`, alt="Icono instagram")
