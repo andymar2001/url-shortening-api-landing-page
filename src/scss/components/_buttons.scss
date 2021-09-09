@@ -1,14 +1,3 @@
-.btn-border {
-  display: inline-block;
-  text-align: center;
-  padding: 1.6rem 3.2rem;
-  border-radius: 10rem;
-  background-color: $primary-color;
-  color: $white;
-  &--fullwidth{
-    width: 100%;
-  }
-}
 .btn {
   display: inline-block;
   text-align: center;
@@ -17,7 +6,8 @@
   background-color: $primary-color;
   color: $white;
   font-weight: 700;
-  &--fullwidth{
+  font-size: 1.8rem;
+  &--fullwidth {
     width: 100%;
   }
 }
