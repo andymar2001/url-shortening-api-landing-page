@@ -15,7 +15,9 @@ block main
     section.search-section
       .search-section__container.container
         form.form-search
-          input.form-search__input(type="text" placeholder="Shorten a link here...")
+          .input-wrap
+            input.input-wrap__input(type="text" placeholder="Shorten a link here...")
+            //- span.input-wrap__note.input-wrap__note--danger Please add a link
           input.form-search__button.btn(type="submit" value="Shorten it!")
         .search-section__results
           .search-result

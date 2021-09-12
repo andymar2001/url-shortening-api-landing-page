@@ -1,0 +1,30 @@
+.input-wrap {
+  &__input {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    outline: none;
+    &::placeholder {
+      color: $gray;
+      font-weight: 700;
+    }
+    &--danger {
+      border: 0.3rem solid $tertiary-color;
+      &::placeholder {
+        color: rgba(244, 98, 98, 0.5);
+        opacity: 1;
+      }
+    }
+  }
+  &__note {
+    display: block;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+    &--danger {
+      color: rgba(244, 98, 98, 0.8);
+    }
+  }
+}
