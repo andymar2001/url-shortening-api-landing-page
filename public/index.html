@@ -29,7 +29,8 @@
     <title>Title</title>
     <meta name="description" content="Description"/>
   </head>
-  <body>
+  <body id="body">
+    <div class="loader" id="loader"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><span class="loader__text">En progreso</span></div>
     <header class="header"> 
       <div class="header__container container"><a class="header__logo" href="#"><img src="assets/img//logo.svg" alt="Logo Shortly"/></a>
         <nav class="header__nav">
@@ -50,30 +51,20 @@
         <picture class="cover-page__img"> <img src="assets/img//illustration-working.svg" alt="Illustration"/></picture>
         <div class="cover-page__detail">
           <p class="cover-page__title">More than just shorter links</p>
-          <p class="cover-page__description text">Build your brand's recognition and get detailed insights on how your links are perfoming</p><a class="cover-page__button btn" href="#">Get Started</a>
+          <p class="cover-page__description text">Build your brand's recognition and get detailed insights on how your links are perfoming</p><a class="cover-page__button btn" href="#search-section">Get Started</a>
         </div>
       </div>
     </div>
     <main class="main"> 
-      <section class="search-section">
+      <section class="search-section" id="search-section">
         <div class="search-section__container container">
-          <form class="form-search">
+          <form class="form-search" method="post" id="form-shortener">
             <div class="input-wrap">
-              <input class="input-wrap__input" type="text" placeholder="Shorten a link here..."/>
+              <input class="input-wrap__input" id="link-shortener" type="text" placeholder="Shorten a link here..." name="linkShortener"/>
             </div>
-            <input class="form-search__button btn" type="submit" value="Shorten it!"/>
+            <input class="form-search__button btn" id="submit-shortener" type="submit" value="Shorten it!"/>
           </form>
-          <div class="search-section__results">
-            <div class="search-result"><span class="search-result__link">https://www.google.com</span><span class="search-result__shortenedlink">https://re.link.com</span>
-              <button class="search-result__button btn">Copy </button>
-            </div>
-            <div class="search-result"><span class="search-result__link">https://www.google.com</span><span class="search-result__shortenedlink">https://re.link.com</span>
-              <button class="search-result__button btn">Copy </button>
-            </div>
-            <div class="search-result"><span class="search-result__link">https://www.google.com</span><span class="search-result__shortenedlink">https://re.liasdasdnk.com</span>
-              <button class="search-result__button btn">Copy</button>
-            </div>
-          </div>
+          <div class="search-section__results" id="form-shortener-results"></div>
         </div>
       </section>
       <section class="statistics-section"> 
@@ -100,7 +91,7 @@
         </div>
       </section>
       <aside class="aside-section">
-        <p class="aside-section__title title">Boost your links today</p><a class="aside-section__button btn" href="#">Get Started</a>
+        <p class="aside-section__title title">Boost your links today</p><a class="aside-section__button btn" href="#search-section">Get Started</a>
       </aside>
       <footer class="footer"> 
         <div class="footer__container container">
@@ -138,6 +129,8 @@
         </div>
       </footer>
     </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"> </script>
     <script src="js/scripts-min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

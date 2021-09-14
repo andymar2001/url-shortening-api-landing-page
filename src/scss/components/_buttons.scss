@@ -7,6 +7,22 @@
   color: $white;
   font-weight: 700;
   font-size: 1.8rem;
+  @include laptop {
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    &:hover {
+      background-color: rgb(112, 240, 240);
+    }
+  }
+  &--copied {
+    background-color: $secondary-color;
+    @include laptop {
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
   &--fullwidth {
     width: 100%;
   }

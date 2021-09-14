@@ -29,7 +29,10 @@ html(lang="es")
     //STYLE BASE
     link(rel="stylesheet", href="css/styles.css")
     block title-description-head
-  body
+  body#body
+    #loader.loader
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      span.loader__text En progreso
     header.header 
       .header__container.container
         a(href="#").header__logo
@@ -51,4 +54,6 @@ html(lang="es")
           <i class="fas fa-bars"></i>
     block cover-page
     block main
+    script(src="https://unpkg.com/axios/dist/axios.min.js") 
     script(src="js/scripts-min.js")
+    script(src="js/index.js")

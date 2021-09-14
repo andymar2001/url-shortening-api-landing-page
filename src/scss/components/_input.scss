@@ -11,7 +11,7 @@
       font-weight: 700;
     }
     &--danger {
-      border: 0.3rem solid $tertiary-color;
+      box-shadow: 0 0 0.3rem 0.3rem $tertiary-color;
       &::placeholder {
         color: rgba(244, 98, 98, 0.5);
         opacity: 1;
