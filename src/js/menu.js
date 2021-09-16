@@ -1,6 +1,5 @@
 const menu = document.getElementById("main-menu");
 const btnMenu = document.getElementById("btn-nav");
-const body = document.getElementsByTagName("body")[0];
 
 btnMenu.addEventListener("click", () => {
   menu.classList.toggle("main-menu--active");

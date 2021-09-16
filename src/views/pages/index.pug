@@ -1,6 +1,6 @@
 extends ../templates/template.pug
 block title-description-head
-  +title-description-head("Title","Description")
+  +title-description-head("Shortening Page","Description shortening Page")
 block cover-page 
   .cover-page 
     .cover-page__container.container
@@ -86,3 +86,6 @@ block main
               img(src=`${img}/icon-pinterest.svg`, alt="Icono pinterest")
             a(href="https://www.instagram.com" target="_blank")
               img(src=`${img}/icon-instagram.svg`, alt="Icono instagram")
+    .credits
+      p.credits__text Developed by 
+        a(href="https://www.linkedin.com/in/andymar2001" target="_blank") Andy Mariños
